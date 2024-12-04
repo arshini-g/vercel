@@ -1,0 +1,94 @@
+/* Dashboard Styles */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f7fb;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .dashboard-header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .dashboard-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #2e3a59;
+  }
+  
+  .dashboard-header .username {
+    color: #5e9bff;
+  }
+  
+  .dashboard-header .subtitle {
+    font-size: 1.2rem;
+    color: #777;
+    margin-top: 10px;
+  }
+  
+  .task-list {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .empty-tasks p {
+    font-size: 1.5rem;
+    color: #888;
+  }
+  
+  .task-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+    width: 100%;
+  }
+  
+  .task-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .task-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .task-title {
+    font-size: 1.3rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .task-btn {
+    background-color: #5e9bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .task-btn:hover {
+    background-color: #4a8fd9;
+  }
+  
+  @media (max-width: 768px) {
+    .task-cards {
+      grid-template-columns: 1fr;
+    }
+  }
+  

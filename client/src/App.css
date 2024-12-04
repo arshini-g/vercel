@@ -1,0 +1,214 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app-container {
+  text-align: center;
+  color: #444;
+  margin: 20px;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+  animation: slideIn 1s ease;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.App {
+  background: white;
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+}
+
+.registration,
+.login {
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #555;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: 0.3s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: #a6c1ee;
+  box-shadow: 0 0 5px rgba(166, 193, 238, 0.5);
+}
+
+button {
+  background-color: #6c63ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #5548c8;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:focus {
+  outline: none;
+}
+
+h1 {
+  font-size: 24px;
+  color: #333;
+}
+
+input::placeholder {
+  color: #aaa;
+  font-style: italic;
+}
+
+.registration h1,
+.login h1 {
+  margin-bottom: 15px;
+}
+
+.registration input,
+.login input {
+  margin-bottom: 10px;
+}
+
+.registration button,
+.login button {
+  margin-top: 10px;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+@media (max-width: 480px) {
+  .App {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  input {
+    font-size: 12px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.top-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.top-menu div {
+  flex: 1;
+  padding: 10px;
+  margin: 0 10px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.logout-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  background-color: #d32f2f;
+}
+
+.add-task-button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.add-task-button:hover {
+  background-color: #388e3c;
+}
